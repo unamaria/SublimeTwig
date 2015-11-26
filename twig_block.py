@@ -2,13 +2,13 @@ import sublime, sublime_plugin
 import re
 
 TWIG_BLOCKS = [['{{', '}}'], ['{%', '%}'], ['{#', '#}']]
-TWIG_REGEX = '{({?|%?|#?)\s{2}(-?)}'
+TWIG_REGEX = '{({?|%?|#?)\s{2}({?|%?|#?)}'
 
 # matches opening bracket that is not followed by the closing one
-TWIG_OPENER_REGEX = '{[\{\%\#]?(?!.*})'
+TWIG_OPENER_REGEX = '{[{\%\#]?(?!.*})'
 # matches the closing bracket. I couldn't figure out a way to exclude preceeding
 # opening bracket, since Python only support fixed-width negative lookbehind
-TWIG_CLOSER_REGEX = '-?}'
+TWIG_CLOSER_REGEX = '[}\%\#]}'
 
 class TwigCommand(sublime_plugin.TextCommand):
   def run(self, edit):
