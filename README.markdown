@@ -65,4 +65,5 @@ Now you can use `ctrl+shift+.` to create and toggle between Twig tags (after res
 
 ## Copyright
 
+Created from [SublimeERB](https://github.com/eddorre/SublimeERB) by [Carlos Rodriguez](https://github.com/eddorre).
 Released under the MIT License.
