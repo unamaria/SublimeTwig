@@ -63,6 +63,10 @@ Now you can use `ctrl+shift+.` to create and toggle between Twig tags (after res
   git pull --rebase
 ```
 
+## Sample
+
+![Screenshots](twig.gif)
+
 ## Copyright
 
 Created from [SublimeERB](https://github.com/eddorre/SublimeERB) by [Carlos Rodriguez](https://github.com/eddorre).
